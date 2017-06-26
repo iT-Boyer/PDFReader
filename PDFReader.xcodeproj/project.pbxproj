@@ -205,6 +205,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143AE09F1F00F53E003C8B51 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB461DD42AEF00113C2F /* ViewController.swift */,
+				14C2DBEF1DD42B7200113C2F /* FileViewController.h */,
+				14C2DBF01DD42B7200113C2F /* FileViewController.m */,
+				14C2DB441DD42AEF00113C2F /* AppDelegate.swift */,
+				14C2DB481DD42AEF00113C2F /* Main.storyboard */,
+				14C2DB721DD42B4200113C2F /* lib */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		146C1D1A1DDD4C9700041D59 /* ZoomingPDF */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,13 +260,8 @@
 		14C2DB431DD42AEF00113C2F /* PDFReader */ = {
 			isa = PBXGroup;
 			children = (
+				143AE09F1F00F53E003C8B51 /* iOS */,
 				14FAD6751DDEB18700591904 /* osx */,
-				14C2DB721DD42B4200113C2F /* lib */,
-				14C2DBEF1DD42B7200113C2F /* FileViewController.h */,
-				14C2DBF01DD42B7200113C2F /* FileViewController.m */,
-				14C2DB441DD42AEF00113C2F /* AppDelegate.swift */,
-				14C2DB461DD42AEF00113C2F /* ViewController.swift */,
-				14C2DB481DD42AEF00113C2F /* Main.storyboard */,
 				14C2DB4B1DD42AEF00113C2F /* Assets.xcassets */,
 				14C2DB4D1DD42AEF00113C2F /* LaunchScreen.storyboard */,
 				14C2DB501DD42AEF00113C2F /* Info.plist */,

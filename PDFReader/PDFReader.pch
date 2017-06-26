@@ -1,0 +1,61 @@
+//
+//  PDFReader.pch
+//  PDFReader
+//
+//  Created by pengyucheng on 10/11/2016.
+//  Copyright © 2016 PBBReader. All rights reserved.
+//
+
+#ifndef PDFReader_pch
+#define PDFReader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PDFReader_pch */
+
+
+#define FPK_READHISTORY_PAGENUM(doc_id) [NSString stringWithFormat:@"READHISTORY_PAGENUM_%@",(doc_id)]
+
+#define MF_BUNDLED_BUNDLE(x) [NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:(x) ofType:@"png"]]
+#define MF_BUNDLED_RESOURCE(x,k,z) [(MF_BUNDLED_BUNDLE(x))pathForResource:(k) ofType:(z)]
+/******************/
+// 获取某个ipadStoryboard
+#define kStoryboard(storyboardName) ([[UIStoryboard storyboardWithName:@"Storyboard_iPad" bundle:nil] instantiateViewControllerWithIdentifier:(storyboardName)])
+// 获取某个iphoneStoryboard
+//#define kPhoneStoryboard(storyboardName) ([[UIStoryboard storyboardWithName:@"Storyboard_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:(storyboardName)])
+
+//判断是否为iPhone
+#define IS_IPHONE ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+//判断是否为iPad
+#define IS_IPAD ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+
+//当前设备appTye
+#define CURRENTAPPTYPE ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad?31:30)
+// 判断是否左横屏
+#define IS_LANDSCAPELEFT ([[UIDevice currentDevice] orientation] == UIDeviceOrientationLandscapeLeft)
+// 判断是否右横屏
+#define IS_LANDSCAPERIGHT ([[UIDevice currentDevice] orientation] == UIDeviceOrientationLandscapeRight)
+// 判断是否横屏 !!注意:此处根据电池条方向判断
+#define IS_LANDSCAPE (([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeLeft) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeRight))
+
+#define IS_LANDSCAPE (([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeLeft) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeRight))
+// 获取屏幕的宽高 !!注意:此处对kScreenWidth及kScreenHeight进行判断，较长的返回kScreenHeight，较短的返回kScreenWidth，针动ios7和ios8后返回长度不一致进行调整
+#define kScreenWidth (([UIScreen mainScreen].bounds.size.width)<([UIScreen mainScreen].bounds.size.height)?([UIScreen mainScreen].bounds.size.width):([UIScreen mainScreen].bounds.size.height))
+#define kScreenHeight (([UIScreen mainScreen].bounds.size.width)>([UIScreen mainScreen].bounds.size.height)?([UIScreen mainScreen].bounds.size.width):([UIScreen mainScreen].bounds.size.height))
+
+// 获取当前设备方向
+#define ORIENTATION ([[UIDevice currentDevice] orientation])
+
+
+// 统一背景颜色
+#define kBackgroundColor [UIColor colorWithRed:240.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0]
+
+// green
+#define kGreen [UIColor colorWithRed:37.0 / 255.0 green:170.0 / 255 blue:70.0 / 255 alpha:1.0]
+
+#define kMargin (kScreenWidth - 2 * kImageWeight) /3
+#define kImageWeight 106
+
+// 判断是否为iphone5
+#define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568)

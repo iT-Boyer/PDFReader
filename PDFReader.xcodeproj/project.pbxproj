@@ -1,0 +1,1025 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		148C919C1DDEE772000EEABB /* PDFDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C919B1DDEE772000EEABB /* PDFDocumentViewController.swift */; };
+		148C919F1DDEEFB4000EEABB /* PDFReader-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 148C919E1DDEEFB4000EEABB /* PDFReader-Info.plist */; };
+		14B3D4FD1DDED4A600A63434 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B3D4FC1DDED4A600A63434 /* Storyboard.storyboard */; };
+		14C2DB451DD42AEF00113C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB441DD42AEF00113C2F /* AppDelegate.swift */; };
+		14C2DB4A1DD42AEF00113C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C2DB481DD42AEF00113C2F /* Main.storyboard */; };
+		14C2DB4C1DD42AEF00113C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C2DB4B1DD42AEF00113C2F /* Assets.xcassets */; };
+		14C2DB4F1DD42AEF00113C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C2DB4D1DD42AEF00113C2F /* LaunchScreen.storyboard */; };
+		14C2DB5A1DD42AF000113C2F /* PDFReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB591DD42AF000113C2F /* PDFReaderTests.swift */; };
+		14C2DB651DD42AF000113C2F /* PDFReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB641DD42AF000113C2F /* PDFReaderUITests.swift */; };
+		14C2DBCA1DD42B4200113C2F /* BookmarkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C2DB741DD42B4200113C2F /* BookmarkView.xib */; };
+		14C2DBCB1DD42B4200113C2F /* BookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB761DD42B4200113C2F /* BookmarkViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBCC1DD42B4200113C2F /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB791DD42B4200113C2F /* DataViewController.m */; };
+		14C2DBCD1DD42B4200113C2F /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB7B1DD42B4200113C2F /* ModelController.m */; };
+		14C2DBCE1DD42B4200113C2F /* PDFParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB7E1DD42B4200113C2F /* PDFParser.m */; };
+		14C2DBD01DD42B4200113C2F /* VoyeurNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB821DD42B4200113C2F /* VoyeurNode.m */; };
+		14C2DBD11DD42B4200113C2F /* MyOutLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB851DD42B4200113C2F /* MyOutLineViewController.m */; };
+		14C2DBD21DD42B4200113C2F /* OutlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C2DB871DD42B4200113C2F /* OutlineView.xib */; };
+		14C2DBD31DD42B4200113C2F /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB891DD42B4200113C2F /* PDFScrollView.m */; };
+		14C2DBD41DD42B4200113C2F /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB8B1DD42B4200113C2F /* PDFView.m */; };
+		14C2DBD51DD42B4200113C2F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB8D1DD42B4200113C2F /* RootViewController.m */; };
+		14C2DBD81DD42B4200113C2F /* CMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB961DD42B4200113C2F /* CMap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBD91DD42B4200113C2F /* FontCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB981DD42B4200113C2F /* FontCollection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBDA1DD42B4200113C2F /* FontDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB9A1DD42B4200113C2F /* FontDescriptor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBDB1DD42B4200113C2F /* FontFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB9C1DD42B4200113C2F /* FontFile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBDC1DD42B4200113C2F /* MyFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DB9E1DD42B4200113C2F /* MyFont.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBDD1DD42B4200113C2F /* CIDFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBA21DD42B4200113C2F /* CIDFont.m */; };
+		14C2DBDE1DD42B4200113C2F /* CIDType0Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBA41DD42B4200113C2F /* CIDType0Font.m */; };
+		14C2DBDF1DD42B4200113C2F /* CIDType2Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBA61DD42B4200113C2F /* CIDType2Font.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBE01DD42B4200113C2F /* CompositeFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBA81DD42B4200113C2F /* CompositeFont.m */; };
+		14C2DBE11DD42B4200113C2F /* Type0Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBAA1DD42B4200113C2F /* Type0Font.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBE21DD42B4200113C2F /* MMType1Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBAD1DD42B4200113C2F /* MMType1Font.m */; };
+		14C2DBE31DD42B4200113C2F /* SimpleFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBAF1DD42B4200113C2F /* SimpleFont.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBE41DD42B4200113C2F /* TrueTypeFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBB11DD42B4200113C2F /* TrueTypeFont.m */; };
+		14C2DBE51DD42B4200113C2F /* Type1Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBB31DD42B4200113C2F /* Type1Font.m */; };
+		14C2DBE61DD42B4200113C2F /* Type3Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBB51DD42B4200113C2F /* Type3Font.m */; };
+		14C2DBE71DD42B4200113C2F /* RenderingState.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBB81DD42B4200113C2F /* RenderingState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBE81DD42B4200113C2F /* RenderingStateStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBBA1DD42B4200113C2F /* RenderingStateStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBE91DD42B4200113C2F /* pdfScannerCallbacks.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBBC1DD42B4200113C2F /* pdfScannerCallbacks.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBEA1DD42B4200113C2F /* Scanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBBE1DD42B4200113C2F /* Scanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBEB1DD42B4200113C2F /* Selection.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBC11DD42B4200113C2F /* Selection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBEC1DD42B4200113C2F /* StringDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBC41DD42B4200113C2F /* StringDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C2DBEE1DD42B4200113C2F /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBC91DD42B4200113C2F /* TiledPDFView.m */; };
+		14C2DBF11DD42B7200113C2F /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C2DBF01DD42B7200113C2F /* FileViewController.m */; };
+		14C2DBF31DD42EC000113C2F /* Manual1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 14C2DBF21DD42EC000113C2F /* Manual1.pdf */; };
+		14FAD6651DDEA71F00591904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C2DB4B1DD42AEF00113C2F /* Assets.xcassets */; };
+		14FAD6661DDEA71F00591904 /* Manual1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 14C2DBF21DD42EC000113C2F /* Manual1.pdf */; };
+		14FAD6781DDEB20800591904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FAD6771DDEB20800591904 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14C2DB561DD42AF000113C2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C2DB391DD42AEE00113C2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14C2DB401DD42AEE00113C2F;
+			remoteInfo = PDFReader;
+		};
+		14C2DB611DD42AF000113C2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C2DB391DD42AEE00113C2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14C2DB401DD42AEE00113C2F;
+			remoteInfo = PDFReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		148C919B1DDEE772000EEABB /* PDFDocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFDocumentViewController.swift; path = osx/PDFDocumentViewController.swift; sourceTree = "<group>"; };
+		148C919E1DDEEFB4000EEABB /* PDFReader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PDFReader-Info.plist"; sourceTree = "<group>"; };
+		14B3D4FC1DDED4A600A63434 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = osx/Storyboard.storyboard; sourceTree = "<group>"; };
+		14C2DB411DD42AEE00113C2F /* PDFReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C2DB441DD42AEF00113C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14C2DB461DD42AEF00113C2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14C2DB491DD42AEF00113C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14C2DB4B1DD42AEF00113C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14C2DB4E1DD42AEF00113C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14C2DB501DD42AEF00113C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C2DB551DD42AF000113C2F /* PDFReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C2DB591DD42AF000113C2F /* PDFReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReaderTests.swift; sourceTree = "<group>"; };
+		14C2DB5B1DD42AF000113C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C2DB601DD42AF000113C2F /* PDFReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C2DB641DD42AF000113C2F /* PDFReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReaderUITests.swift; sourceTree = "<group>"; };
+		14C2DB661DD42AF000113C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C2DB741DD42B4200113C2F /* BookmarkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkView.xib; sourceTree = "<group>"; };
+		14C2DB751DD42B4200113C2F /* BookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkViewController.h; sourceTree = "<group>"; };
+		14C2DB761DD42B4200113C2F /* BookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkViewController.m; sourceTree = "<group>"; };
+		14C2DB771DD42B4200113C2F /* BookmarkViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkViewControllerDelegate.h; sourceTree = "<group>"; };
+		14C2DB781DD42B4200113C2F /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		14C2DB791DD42B4200113C2F /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		14C2DB7A1DD42B4200113C2F /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		14C2DB7B1DD42B4200113C2F /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		14C2DB7D1DD42B4200113C2F /* PDFParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFParser.h; sourceTree = "<group>"; };
+		14C2DB7E1DD42B4200113C2F /* PDFParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFParser.m; sourceTree = "<group>"; };
+		14C2DB7F1DD42B4200113C2F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14C2DB801DD42B4200113C2F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14C2DB811DD42B4200113C2F /* VoyeurNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoyeurNode.h; sourceTree = "<group>"; };
+		14C2DB821DD42B4200113C2F /* VoyeurNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoyeurNode.m; sourceTree = "<group>"; };
+		14C2DB841DD42B4200113C2F /* MyOutLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOutLineViewController.h; sourceTree = "<group>"; };
+		14C2DB851DD42B4200113C2F /* MyOutLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOutLineViewController.m; sourceTree = "<group>"; };
+		14C2DB861DD42B4200113C2F /* MyOutlineViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOutlineViewControllerDelegate.h; sourceTree = "<group>"; };
+		14C2DB871DD42B4200113C2F /* OutlineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OutlineView.xib; sourceTree = "<group>"; };
+		14C2DB881DD42B4200113C2F /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
+		14C2DB891DD42B4200113C2F /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
+		14C2DB8A1DD42B4200113C2F /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		14C2DB8B1DD42B4200113C2F /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		14C2DB8C1DD42B4200113C2F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		14C2DB8D1DD42B4200113C2F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		14C2DB8F1DD42B4200113C2F /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		14C2DB901DD42B4200113C2F /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
+		14C2DB911DD42B4200113C2F /* PageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
+		14C2DB921DD42B4200113C2F /* PageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
+		14C2DB951DD42B4200113C2F /* CMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMap.h; sourceTree = "<group>"; };
+		14C2DB961DD42B4200113C2F /* CMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMap.m; sourceTree = "<group>"; };
+		14C2DB971DD42B4200113C2F /* FontCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontCollection.h; sourceTree = "<group>"; };
+		14C2DB981DD42B4200113C2F /* FontCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontCollection.m; sourceTree = "<group>"; };
+		14C2DB991DD42B4200113C2F /* FontDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontDescriptor.h; sourceTree = "<group>"; };
+		14C2DB9A1DD42B4200113C2F /* FontDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontDescriptor.m; sourceTree = "<group>"; };
+		14C2DB9B1DD42B4200113C2F /* FontFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontFile.h; sourceTree = "<group>"; };
+		14C2DB9C1DD42B4200113C2F /* FontFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontFile.m; sourceTree = "<group>"; };
+		14C2DB9D1DD42B4200113C2F /* MyFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFont.h; sourceTree = "<group>"; };
+		14C2DB9E1DD42B4200113C2F /* MyFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFont.m; sourceTree = "<group>"; };
+		14C2DBA11DD42B4200113C2F /* CIDFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIDFont.h; sourceTree = "<group>"; };
+		14C2DBA21DD42B4200113C2F /* CIDFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIDFont.m; sourceTree = "<group>"; };
+		14C2DBA31DD42B4200113C2F /* CIDType0Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIDType0Font.h; sourceTree = "<group>"; };
+		14C2DBA41DD42B4200113C2F /* CIDType0Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIDType0Font.m; sourceTree = "<group>"; };
+		14C2DBA51DD42B4200113C2F /* CIDType2Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIDType2Font.h; sourceTree = "<group>"; };
+		14C2DBA61DD42B4200113C2F /* CIDType2Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIDType2Font.m; sourceTree = "<group>"; };
+		14C2DBA71DD42B4200113C2F /* CompositeFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeFont.h; sourceTree = "<group>"; };
+		14C2DBA81DD42B4200113C2F /* CompositeFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeFont.m; sourceTree = "<group>"; };
+		14C2DBA91DD42B4200113C2F /* Type0Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type0Font.h; sourceTree = "<group>"; };
+		14C2DBAA1DD42B4200113C2F /* Type0Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type0Font.m; sourceTree = "<group>"; };
+		14C2DBAC1DD42B4200113C2F /* MMType1Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMType1Font.h; sourceTree = "<group>"; };
+		14C2DBAD1DD42B4200113C2F /* MMType1Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMType1Font.m; sourceTree = "<group>"; };
+		14C2DBAE1DD42B4200113C2F /* SimpleFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleFont.h; sourceTree = "<group>"; };
+		14C2DBAF1DD42B4200113C2F /* SimpleFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleFont.m; sourceTree = "<group>"; };
+		14C2DBB01DD42B4200113C2F /* TrueTypeFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueTypeFont.h; sourceTree = "<group>"; };
+		14C2DBB11DD42B4200113C2F /* TrueTypeFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueTypeFont.m; sourceTree = "<group>"; };
+		14C2DBB21DD42B4200113C2F /* Type1Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type1Font.h; sourceTree = "<group>"; };
+		14C2DBB31DD42B4200113C2F /* Type1Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type1Font.m; sourceTree = "<group>"; };
+		14C2DBB41DD42B4200113C2F /* Type3Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type3Font.h; sourceTree = "<group>"; };
+		14C2DBB51DD42B4200113C2F /* Type3Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type3Font.m; sourceTree = "<group>"; };
+		14C2DBB71DD42B4200113C2F /* RenderingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingState.h; sourceTree = "<group>"; };
+		14C2DBB81DD42B4200113C2F /* RenderingState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderingState.m; sourceTree = "<group>"; };
+		14C2DBB91DD42B4200113C2F /* RenderingStateStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingStateStack.h; sourceTree = "<group>"; };
+		14C2DBBA1DD42B4200113C2F /* RenderingStateStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderingStateStack.m; sourceTree = "<group>"; };
+		14C2DBBC1DD42B4200113C2F /* pdfScannerCallbacks.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = pdfScannerCallbacks.mm; sourceTree = "<group>"; };
+		14C2DBBD1DD42B4200113C2F /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		14C2DBBE1DD42B4200113C2F /* Scanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scanner.m; sourceTree = "<group>"; };
+		14C2DBC01DD42B4200113C2F /* Selection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selection.h; sourceTree = "<group>"; };
+		14C2DBC11DD42B4200113C2F /* Selection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selection.m; sourceTree = "<group>"; };
+		14C2DBC31DD42B4200113C2F /* StringDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringDetector.h; sourceTree = "<group>"; };
+		14C2DBC41DD42B4200113C2F /* StringDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringDetector.m; sourceTree = "<group>"; };
+		14C2DBC51DD42B4200113C2F /* StringDetectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringDetectorDelegate.h; sourceTree = "<group>"; };
+		14C2DBC61DD42B4200113C2F /* PDFPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPage.h; sourceTree = "<group>"; };
+		14C2DBC71DD42B4200113C2F /* PDFPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPage.m; sourceTree = "<group>"; };
+		14C2DBC81DD42B4200113C2F /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
+		14C2DBC91DD42B4200113C2F /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
+		14C2DBEF1DD42B7200113C2F /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
+		14C2DBF01DD42B7200113C2F /* FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
+		14C2DBF21DD42EC000113C2F /* Manual1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Manual1.pdf; sourceTree = "<group>"; };
+		14C2DC0E1DD4464500113C2F /* PDFReader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFReader.pch; sourceTree = "<group>"; };
+		14FAD66D1DDEA71F00591904 /* PDFReaderForOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFReaderForOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14FAD6761DDEB20700591904 /* PDFReaderForOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDFReaderForOSX-Bridging-Header.h"; sourceTree = "<group>"; };
+		14FAD6771DDEB20800591904 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = osx/AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14C2DB3E1DD42AEE00113C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C2DB521DD42AF000113C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C2DB5D1DD42AF000113C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14FAD6621DDEA71F00591904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		146C1D1A1DDD4C9700041D59 /* ZoomingPDF */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB781DD42B4200113C2F /* DataViewController.h */,
+				14C2DB791DD42B4200113C2F /* DataViewController.m */,
+				14C2DB7A1DD42B4200113C2F /* ModelController.h */,
+				14C2DB7B1DD42B4200113C2F /* ModelController.m */,
+				14C2DB881DD42B4200113C2F /* PDFScrollView.h */,
+				14C2DB891DD42B4200113C2F /* PDFScrollView.m */,
+				14C2DB8C1DD42B4200113C2F /* RootViewController.h */,
+				14C2DB8D1DD42B4200113C2F /* RootViewController.m */,
+				14C2DBC81DD42B4200113C2F /* TiledPDFView.h */,
+				14C2DBC91DD42B4200113C2F /* TiledPDFView.m */,
+			);
+			name = ZoomingPDF;
+			sourceTree = "<group>";
+		};
+		14C2DB381DD42AEE00113C2F = {
+			isa = PBXGroup;
+			children = (
+				14C2DB431DD42AEF00113C2F /* PDFReader */,
+				14C2DB581DD42AF000113C2F /* PDFReaderTests */,
+				14C2DB631DD42AF000113C2F /* PDFReaderUITests */,
+				14C2DB421DD42AEE00113C2F /* Products */,
+				14C2DBF61DD43DB400113C2F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14C2DB421DD42AEE00113C2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB411DD42AEE00113C2F /* PDFReader.app */,
+				14C2DB551DD42AF000113C2F /* PDFReaderTests.xctest */,
+				14C2DB601DD42AF000113C2F /* PDFReaderUITests.xctest */,
+				14FAD66D1DDEA71F00591904 /* PDFReaderForOSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14C2DB431DD42AEF00113C2F /* PDFReader */ = {
+			isa = PBXGroup;
+			children = (
+				14FAD6751DDEB18700591904 /* osx */,
+				14C2DB721DD42B4200113C2F /* lib */,
+				14C2DBEF1DD42B7200113C2F /* FileViewController.h */,
+				14C2DBF01DD42B7200113C2F /* FileViewController.m */,
+				14C2DB441DD42AEF00113C2F /* AppDelegate.swift */,
+				14C2DB461DD42AEF00113C2F /* ViewController.swift */,
+				14C2DB481DD42AEF00113C2F /* Main.storyboard */,
+				14C2DB4B1DD42AEF00113C2F /* Assets.xcassets */,
+				14C2DB4D1DD42AEF00113C2F /* LaunchScreen.storyboard */,
+				14C2DB501DD42AEF00113C2F /* Info.plist */,
+				148C919E1DDEEFB4000EEABB /* PDFReader-Info.plist */,
+				14C2DBF21DD42EC000113C2F /* Manual1.pdf */,
+				14C2DC0E1DD4464500113C2F /* PDFReader.pch */,
+			);
+			path = PDFReader;
+			sourceTree = "<group>";
+		};
+		14C2DB581DD42AF000113C2F /* PDFReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB591DD42AF000113C2F /* PDFReaderTests.swift */,
+				14C2DB5B1DD42AF000113C2F /* Info.plist */,
+			);
+			path = PDFReaderTests;
+			sourceTree = "<group>";
+		};
+		14C2DB631DD42AF000113C2F /* PDFReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB641DD42AF000113C2F /* PDFReaderUITests.swift */,
+				14C2DB661DD42AF000113C2F /* Info.plist */,
+			);
+			path = PDFReaderUITests;
+			sourceTree = "<group>";
+		};
+		14C2DB721DD42B4200113C2F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				146C1D1A1DDD4C9700041D59 /* ZoomingPDF */,
+				14C2DB731DD42B4200113C2F /* Bookmarks */,
+				14C2DB7C1DD42B4200113C2F /* Node */,
+				14C2DB831DD42B4200113C2F /* OutLine */,
+				14C2DB8A1DD42B4200113C2F /* PDFView.h */,
+				14C2DB8B1DD42B4200113C2F /* PDFView.m */,
+				14C2DB8E1DD42B4200113C2F /* TextSearch */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		14C2DB731DD42B4200113C2F /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB741DD42B4200113C2F /* BookmarkView.xib */,
+				14C2DB751DD42B4200113C2F /* BookmarkViewController.h */,
+				14C2DB761DD42B4200113C2F /* BookmarkViewController.m */,
+				14C2DB771DD42B4200113C2F /* BookmarkViewControllerDelegate.h */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		14C2DB7C1DD42B4200113C2F /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB7D1DD42B4200113C2F /* PDFParser.h */,
+				14C2DB7E1DD42B4200113C2F /* PDFParser.m */,
+				14C2DB7F1DD42B4200113C2F /* ViewController.h */,
+				14C2DB801DD42B4200113C2F /* ViewController.m */,
+				14C2DB811DD42B4200113C2F /* VoyeurNode.h */,
+				14C2DB821DD42B4200113C2F /* VoyeurNode.m */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		14C2DB831DD42B4200113C2F /* OutLine */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB841DD42B4200113C2F /* MyOutLineViewController.h */,
+				14C2DB851DD42B4200113C2F /* MyOutLineViewController.m */,
+				14C2DB861DD42B4200113C2F /* MyOutlineViewControllerDelegate.h */,
+				14C2DB871DD42B4200113C2F /* OutlineView.xib */,
+			);
+			path = OutLine;
+			sourceTree = "<group>";
+		};
+		14C2DB8E1DD42B4200113C2F /* TextSearch */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB931DD42B4200113C2F /* PDFCore */,
+				14C2DB8F1DD42B4200113C2F /* Page.h */,
+				14C2DB901DD42B4200113C2F /* Page.m */,
+				14C2DB911DD42B4200113C2F /* PageView.h */,
+				14C2DB921DD42B4200113C2F /* PageView.m */,
+				14C2DBC61DD42B4200113C2F /* PDFPage.h */,
+				14C2DBC71DD42B4200113C2F /* PDFPage.m */,
+			);
+			path = TextSearch;
+			sourceTree = "<group>";
+		};
+		14C2DB931DD42B4200113C2F /* PDFCore */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB941DD42B4200113C2F /* Font */,
+				14C2DBB61DD42B4200113C2F /* RenderingState */,
+				14C2DBBB1DD42B4200113C2F /* Scanner */,
+				14C2DBBF1DD42B4200113C2F /* Selection */,
+				14C2DBC21DD42B4200113C2F /* StringDetector */,
+			);
+			path = PDFCore;
+			sourceTree = "<group>";
+		};
+		14C2DB941DD42B4200113C2F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DB951DD42B4200113C2F /* CMap.h */,
+				14C2DB961DD42B4200113C2F /* CMap.m */,
+				14C2DB971DD42B4200113C2F /* FontCollection.h */,
+				14C2DB981DD42B4200113C2F /* FontCollection.m */,
+				14C2DB991DD42B4200113C2F /* FontDescriptor.h */,
+				14C2DB9A1DD42B4200113C2F /* FontDescriptor.m */,
+				14C2DB9B1DD42B4200113C2F /* FontFile.h */,
+				14C2DB9C1DD42B4200113C2F /* FontFile.m */,
+				14C2DB9D1DD42B4200113C2F /* MyFont.h */,
+				14C2DB9E1DD42B4200113C2F /* MyFont.m */,
+				14C2DB9F1DD42B4200113C2F /* Subtypes */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		14C2DB9F1DD42B4200113C2F /* Subtypes */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DBA01DD42B4200113C2F /* CompositeFonts */,
+				14C2DBAB1DD42B4200113C2F /* SimpleFonts */,
+			);
+			path = Subtypes;
+			sourceTree = "<group>";
+		};
+		14C2DBA01DD42B4200113C2F /* CompositeFonts */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DBA11DD42B4200113C2F /* CIDFont.h */,
+				14C2DBA21DD42B4200113C2F /* CIDFont.m */,
+				14C2DBA31DD42B4200113C2F /* CIDType0Font.h */,
+				14C2DBA41DD42B4200113C2F /* CIDType0Font.m */,
+				14C2DBA51DD42B4200113C2F /* CIDType2Font.h */,
+				14C2DBA61DD42B4200113C2F /* CIDType2Font.m */,
+				14C2DBA71DD42B4200113C2F /* CompositeFont.h */,
+				14C2DBA81DD42B4200113C2F /* CompositeFont.m */,
+				14C2DBA91DD42B4200113C2F /* Type0Font.h */,
+				14C2DBAA1DD42B4200113C2F /* Type0Font.m */,
+			);
+			path = CompositeFonts;
+			sourceTree = "<group>";
+		};
+		14C2DBAB1DD42B4200113C2F /* SimpleFonts */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DBAC1DD42B4200113C2F /* MMType1Font.h */,
+				14C2DBAD1DD42B4200113C2F /* MMType1Font.m */,
+				14C2DBAE1DD42B4200113C2F /* SimpleFont.h */,
+				14C2DBAF1DD42B4200113C2F /* SimpleFont.m */,
+				14C2DBB01DD42B4200113C2F /* TrueTypeFont.h */,
+				14C2DBB11DD42B4200113C2F /* TrueTypeFont.m */,
+				14C2DBB21DD42B4200113C2F /* Type1Font.h */,
+				14C2DBB31DD42B4200113C2F /* Type1Font.m */,
+				14C2DBB41DD42B4200113C2F /* Type3Font.h */,
+				14C2DBB51DD42B4200113C2F /* Type3Font.m */,
+			);
+			path = SimpleFonts;
+			sourceTree = "<group>";
+		};
+		14C2DBB61DD42B4200113C2F /* RenderingState */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DBB71DD42B4200113C2F /* RenderingState.h */,
+				14C2DBB81DD42B4200113C2F /* RenderingState.m */,
+				14C2DBB91DD42B4200113C2F /* RenderingStateStack.h */,
+				14C2DBBA1DD42B4200113C2F /* RenderingStateStack.m */,
+			);
+			path = RenderingState;
+			sourceTree = "<group>";
+		};
+		14C2DBBB1DD42B4200113C2F /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DBBC1DD42B4200113C2F /* pdfScannerCallbacks.mm */,
+				14C2DBBD1DD42B4200113C2F /* Scanner.h */,
+				14C2DBBE1DD42B4200113C2F /* Scanner.m */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		14C2DBBF1DD42B4200113C2F /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DBC01DD42B4200113C2F /* Selection.h */,
+				14C2DBC11DD42B4200113C2F /* Selection.m */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
+		14C2DBC21DD42B4200113C2F /* StringDetector */ = {
+			isa = PBXGroup;
+			children = (
+				14C2DBC31DD42B4200113C2F /* StringDetector.h */,
+				14C2DBC41DD42B4200113C2F /* StringDetector.m */,
+				14C2DBC51DD42B4200113C2F /* StringDetectorDelegate.h */,
+			);
+			path = StringDetector;
+			sourceTree = "<group>";
+		};
+		14C2DBF61DD43DB400113C2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14FAD6751DDEB18700591904 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				14FAD6771DDEB20800591904 /* AppDelegate.swift */,
+				148C919B1DDEE772000EEABB /* PDFDocumentViewController.swift */,
+				14FAD6761DDEB20700591904 /* PDFReaderForOSX-Bridging-Header.h */,
+				14B3D4FC1DDED4A600A63434 /* Storyboard.storyboard */,
+			);
+			name = osx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14C2DB401DD42AEE00113C2F /* PDFReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C2DB691DD42AF000113C2F /* Build configuration list for PBXNativeTarget "PDFReader" */;
+			buildPhases = (
+				14C2DB3D1DD42AEE00113C2F /* Sources */,
+				14C2DB3E1DD42AEE00113C2F /* Frameworks */,
+				14C2DB3F1DD42AEE00113C2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFReader;
+			productName = PDFReader;
+			productReference = 14C2DB411DD42AEE00113C2F /* PDFReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14C2DB541DD42AF000113C2F /* PDFReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C2DB6C1DD42AF000113C2F /* Build configuration list for PBXNativeTarget "PDFReaderTests" */;
+			buildPhases = (
+				14C2DB511DD42AF000113C2F /* Sources */,
+				14C2DB521DD42AF000113C2F /* Frameworks */,
+				14C2DB531DD42AF000113C2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14C2DB571DD42AF000113C2F /* PBXTargetDependency */,
+			);
+			name = PDFReaderTests;
+			productName = PDFReaderTests;
+			productReference = 14C2DB551DD42AF000113C2F /* PDFReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14C2DB5F1DD42AF000113C2F /* PDFReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C2DB6F1DD42AF000113C2F /* Build configuration list for PBXNativeTarget "PDFReaderUITests" */;
+			buildPhases = (
+				14C2DB5C1DD42AF000113C2F /* Sources */,
+				14C2DB5D1DD42AF000113C2F /* Frameworks */,
+				14C2DB5E1DD42AF000113C2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14C2DB621DD42AF000113C2F /* PBXTargetDependency */,
+			);
+			name = PDFReaderUITests;
+			productName = PDFReaderUITests;
+			productReference = 14C2DB601DD42AF000113C2F /* PDFReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		14FAD63F1DDEA71F00591904 /* PDFReaderForOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14FAD66A1DDEA71F00591904 /* Build configuration list for PBXNativeTarget "PDFReaderForOSX" */;
+			buildPhases = (
+				14FAD6401DDEA71F00591904 /* Sources */,
+				14FAD6621DDEA71F00591904 /* Frameworks */,
+				14FAD6631DDEA71F00591904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFReaderForOSX;
+			productName = PDFReader;
+			productReference = 14FAD66D1DDEA71F00591904 /* PDFReaderForOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14C2DB391DD42AEE00113C2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = PBBReader;
+				TargetAttributes = {
+					14C2DB401DD42AEE00113C2F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = FA78T6VRG8;
+						ProvisioningStyle = Automatic;
+					};
+					14C2DB541DD42AF000113C2F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = FA78T6VRG8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 14C2DB401DD42AEE00113C2F;
+					};
+					14C2DB5F1DD42AF000113C2F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = FA78T6VRG8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 14C2DB401DD42AEE00113C2F;
+					};
+					14FAD63F1DDEA71F00591904 = {
+						DevelopmentTeam = FA78T6VRG8;
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = 14C2DB3C1DD42AEE00113C2F /* Build configuration list for PBXProject "PDFReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14C2DB381DD42AEE00113C2F;
+			productRefGroup = 14C2DB421DD42AEE00113C2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14C2DB401DD42AEE00113C2F /* PDFReader */,
+				14FAD63F1DDEA71F00591904 /* PDFReaderForOSX */,
+				14C2DB541DD42AF000113C2F /* PDFReaderTests */,
+				14C2DB5F1DD42AF000113C2F /* PDFReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14C2DB3F1DD42AEE00113C2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C2DB4F1DD42AEF00113C2F /* LaunchScreen.storyboard in Resources */,
+				14C2DB4C1DD42AEF00113C2F /* Assets.xcassets in Resources */,
+				14C2DBF31DD42EC000113C2F /* Manual1.pdf in Resources */,
+				14C2DBCA1DD42B4200113C2F /* BookmarkView.xib in Resources */,
+				14C2DBD21DD42B4200113C2F /* OutlineView.xib in Resources */,
+				14C2DB4A1DD42AEF00113C2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C2DB531DD42AF000113C2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C2DB5E1DD42AF000113C2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14FAD6631DDEA71F00591904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148C919F1DDEEFB4000EEABB /* PDFReader-Info.plist in Resources */,
+				14FAD6651DDEA71F00591904 /* Assets.xcassets in Resources */,
+				14FAD6661DDEA71F00591904 /* Manual1.pdf in Resources */,
+				14B3D4FD1DDED4A600A63434 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14C2DB3D1DD42AEE00113C2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C2DBEC1DD42B4200113C2F /* StringDetector.m in Sources */,
+				14C2DBDA1DD42B4200113C2F /* FontDescriptor.m in Sources */,
+				14C2DBF11DD42B7200113C2F /* FileViewController.m in Sources */,
+				14C2DBE41DD42B4200113C2F /* TrueTypeFont.m in Sources */,
+				14C2DBE91DD42B4200113C2F /* pdfScannerCallbacks.mm in Sources */,
+				14C2DBEA1DD42B4200113C2F /* Scanner.m in Sources */,
+				14C2DBDB1DD42B4200113C2F /* FontFile.m in Sources */,
+				14C2DBCC1DD42B4200113C2F /* DataViewController.m in Sources */,
+				14C2DBD51DD42B4200113C2F /* RootViewController.m in Sources */,
+				14C2DBD81DD42B4200113C2F /* CMap.m in Sources */,
+				14C2DBE61DD42B4200113C2F /* Type3Font.m in Sources */,
+				14C2DBE01DD42B4200113C2F /* CompositeFont.m in Sources */,
+				14C2DBD41DD42B4200113C2F /* PDFView.m in Sources */,
+				14C2DBCD1DD42B4200113C2F /* ModelController.m in Sources */,
+				14C2DBE81DD42B4200113C2F /* RenderingStateStack.m in Sources */,
+				14C2DBDC1DD42B4200113C2F /* MyFont.m in Sources */,
+				14C2DBCE1DD42B4200113C2F /* PDFParser.m in Sources */,
+				14C2DB451DD42AEF00113C2F /* AppDelegate.swift in Sources */,
+				14C2DBEB1DD42B4200113C2F /* Selection.m in Sources */,
+				14C2DBDF1DD42B4200113C2F /* CIDType2Font.m in Sources */,
+				14C2DBD31DD42B4200113C2F /* PDFScrollView.m in Sources */,
+				14C2DBD11DD42B4200113C2F /* MyOutLineViewController.m in Sources */,
+				14C2DBCB1DD42B4200113C2F /* BookmarkViewController.m in Sources */,
+				14C2DBD91DD42B4200113C2F /* FontCollection.m in Sources */,
+				14C2DBE71DD42B4200113C2F /* RenderingState.m in Sources */,
+				14C2DBEE1DD42B4200113C2F /* TiledPDFView.m in Sources */,
+				14C2DBE31DD42B4200113C2F /* SimpleFont.m in Sources */,
+				14C2DBE21DD42B4200113C2F /* MMType1Font.m in Sources */,
+				14C2DBD01DD42B4200113C2F /* VoyeurNode.m in Sources */,
+				14C2DBE51DD42B4200113C2F /* Type1Font.m in Sources */,
+				14C2DBDD1DD42B4200113C2F /* CIDFont.m in Sources */,
+				14C2DBDE1DD42B4200113C2F /* CIDType0Font.m in Sources */,
+				14C2DBE11DD42B4200113C2F /* Type0Font.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C2DB511DD42AF000113C2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C2DB5A1DD42AF000113C2F /* PDFReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C2DB5C1DD42AF000113C2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C2DB651DD42AF000113C2F /* PDFReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14FAD6401DDEA71F00591904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FAD6781DDEB20800591904 /* AppDelegate.swift in Sources */,
+				148C919C1DDEE772000EEABB /* PDFDocumentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14C2DB571DD42AF000113C2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14C2DB401DD42AEE00113C2F /* PDFReader */;
+			targetProxy = 14C2DB561DD42AF000113C2F /* PBXContainerItemProxy */;
+		};
+		14C2DB621DD42AF000113C2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14C2DB401DD42AEE00113C2F /* PDFReader */;
+			targetProxy = 14C2DB611DD42AF000113C2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14C2DB481DD42AEF00113C2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C2DB491DD42AEF00113C2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14C2DB4D1DD42AEF00113C2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C2DB4E1DD42AEF00113C2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14C2DB671DD42AF000113C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14C2DB681DD42AF000113C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14C2DB6A1DD42AF000113C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FA78T6VRG8;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = PDFReader/PDFReader.pch;
+				INFOPLIST_FILE = PDFReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyc.com.cn.PDFReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		14C2DB6B1DD42AF000113C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FA78T6VRG8;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = PDFReader/PDFReader.pch;
+				INFOPLIST_FILE = PDFReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyc.com.cn.PDFReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		14C2DB6D1DD42AF000113C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FA78T6VRG8;
+				INFOPLIST_FILE = PDFReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyc.com.cn.PDFReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFReader.app/PDFReader";
+			};
+			name = Debug;
+		};
+		14C2DB6E1DD42AF000113C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FA78T6VRG8;
+				INFOPLIST_FILE = PDFReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyc.com.cn.PDFReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFReader.app/PDFReader";
+			};
+			name = Release;
+		};
+		14C2DB701DD42AF000113C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FA78T6VRG8;
+				INFOPLIST_FILE = PDFReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyc.com.cn.PDFReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PDFReader;
+			};
+			name = Debug;
+		};
+		14C2DB711DD42AF000113C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FA78T6VRG8;
+				INFOPLIST_FILE = PDFReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyc.com.cn.PDFReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PDFReader;
+			};
+			name = Release;
+		};
+		14FAD66B1DDEA71F00591904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = FA78T6VRG8;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "PDFReader/PDFReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = pyc.com.cn.PDFReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.13;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "PDFReader/PDFReaderForOSX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		14FAD66C1DDEA71F00591904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = FA78T6VRG8;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "PDFReader/PDFReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = pyc.com.cn.PDFReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.13;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "PDFReader/PDFReaderForOSX-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14C2DB3C1DD42AEE00113C2F /* Build configuration list for PBXProject "PDFReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C2DB671DD42AF000113C2F /* Debug */,
+				14C2DB681DD42AF000113C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C2DB691DD42AF000113C2F /* Build configuration list for PBXNativeTarget "PDFReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C2DB6A1DD42AF000113C2F /* Debug */,
+				14C2DB6B1DD42AF000113C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C2DB6C1DD42AF000113C2F /* Build configuration list for PBXNativeTarget "PDFReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C2DB6D1DD42AF000113C2F /* Debug */,
+				14C2DB6E1DD42AF000113C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C2DB6F1DD42AF000113C2F /* Build configuration list for PBXNativeTarget "PDFReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C2DB701DD42AF000113C2F /* Debug */,
+				14C2DB711DD42AF000113C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14FAD66A1DDEA71F00591904 /* Build configuration list for PBXNativeTarget "PDFReaderForOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14FAD66B1DDEA71F00591904 /* Debug */,
+				14FAD66C1DDEA71F00591904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14C2DB391DD42AEE00113C2F /* Project object */;
+}

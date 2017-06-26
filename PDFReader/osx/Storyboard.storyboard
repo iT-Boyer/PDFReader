@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Z0Y-mL-2au">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.17"/>
+        <plugIn identifier="com.apple.pdfkit.ibplugin" version="13122.17"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="CYi-3h-VBV">
+            <objects>
+                <windowController id="Z0Y-mL-2au" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="hvB-Kr-WWx">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                    </window>
+                    <connections>
+                        <segue destination="C24-xL-834" kind="relationship" relationship="window.shadowedContentViewController" id="pCq-GL-ThX"/>
+                    </connections>
+                </windowController>
+                <customObject id="acv-CH-AYp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-402" y="-254"/>
+        </scene>
+        <!--Document View Controller-->
+        <scene sceneID="LYc-DV-fgd">
+            <objects>
+                <viewController id="C24-xL-834" customClass="PDFDocumentViewController" customModule="PDFReaderForOSX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="VvE-ca-rKA">
+                        <rect key="frame" x="0.0" y="0.0" width="711" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <pdfView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBF-Z4-1Nb">
+                                <rect key="frame" x="196" y="0.0" width="515" height="270"/>
+                            </pdfView>
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtC-da-Kvw">
+                                <rect key="frame" x="0.0" y="0.0" width="196" height="270"/>
+                                <clipView key="contentView" ambiguous="YES" id="UcS-Kq-fnO">
+                                    <rect key="frame" x="1" y="1" width="194" height="268"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="22" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="jhj-5a-4gx" id="tFB-Qc-fQP">
+                                            <rect key="frame" x="0.0" y="0.0" width="194" height="268"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <tableColumns>
+                                                <tableColumn width="191" minWidth="40" maxWidth="1000" id="jhj-5a-4gx">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="3GM-r9-3OG">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <textField verticalHuggingPriority="750" id="jLh-5L-BbD">
+                                                            <rect key="frame" x="1" y="1" width="191" height="22"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" refusesFirstResponder="YES" state="on" alignment="left" title="nihao" drawsBackground="YES" id="Nm7-20-asc">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                <connections>
+                                                                    <action selector="takeDestinationFromOutline:" target="C24-xL-834" id="c36-xa-He2"/>
+                                                                </connections>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="C24-xL-834" id="Hab-Yv-Wfq"/>
+                                                <outlet property="delegate" destination="C24-xL-834" id="wR3-gK-Q0q"/>
+                                            </connections>
+                                        </outlineView>
+                                    </subviews>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="Ugm-sV-GzQ"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="neW-2J-zIo">
+                                    <rect key="frame" x="1" y="254" width="42" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="Z7G-ZJ-XcE">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="KtC-da-Kvw" firstAttribute="top" secondItem="VvE-ca-rKA" secondAttribute="top" id="Aas-KB-Asc"/>
+                            <constraint firstAttribute="bottom" secondItem="QBF-Z4-1Nb" secondAttribute="bottom" id="JgK-Ez-k3v"/>
+                            <constraint firstAttribute="trailing" secondItem="QBF-Z4-1Nb" secondAttribute="trailing" id="Pep-uZ-KFs"/>
+                            <constraint firstItem="QBF-Z4-1Nb" firstAttribute="leading" secondItem="tFB-Qc-fQP" secondAttribute="trailing" id="SKm-MQ-dJk"/>
+                            <constraint firstItem="QBF-Z4-1Nb" firstAttribute="top" secondItem="VvE-ca-rKA" secondAttribute="top" id="de5-3m-S3G"/>
+                            <constraint firstItem="QBF-Z4-1Nb" firstAttribute="leading" secondItem="KtC-da-Kvw" secondAttribute="trailing" id="gZw-BD-d2o"/>
+                            <constraint firstItem="KtC-da-Kvw" firstAttribute="leading" secondItem="VvE-ca-rKA" secondAttribute="leading" id="uiq-c5-ek0"/>
+                            <constraint firstAttribute="bottom" secondItem="KtC-da-Kvw" secondAttribute="bottom" id="zPt-AL-eh4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ibPDFOutLineView" destination="tFB-Qc-fQP" id="PY5-L0-Had"/>
+                        <outlet property="ibPDFView" destination="QBF-Z4-1Nb" id="xHl-FP-kZE"/>
+                    </connections>
+                </viewController>
+                <customObject id="7SV-re-ldL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372.5" y="-248"/>
+        </scene>
+    </scenes>
+</document>

@@ -11,23 +11,30 @@
 #import "MyOutLineViewController.h"
 #import "BookmarkViewController.h"
 
+#define FPK_REUSABLE_VIEW_NONE 0
+#define FPK_REUSABLE_VIEW_SEARCH 1
+#define FPK_REUSABLE_VIEW_TEXT 2
+#define FPK_REUSABLE_VIEW_OUTLINE 3
+#define FPK_REUSABLE_VIEW_BOOKMARK 4
+
+
+
+static const NSInteger FPKReusableViewNone = FPK_REUSABLE_VIEW_NONE;
+static const NSInteger FPKReusableViewSearch = FPK_REUSABLE_VIEW_SEARCH;
+static const NSInteger FPKReusableViewText = FPK_REUSABLE_VIEW_TEXT;
+static const NSInteger FPKReusableViewOutline = FPK_REUSABLE_VIEW_OUTLINE;
+static const NSInteger FPKReusableViewBookmarks = FPK_REUSABLE_VIEW_BOOKMARK;
+
+#define FPK_SEARCH_VIEW_MODE_MINI 0
+#define FPK_SEARCH_VIEW_MODE_FULL 1
+
+static const NSInteger FPKSearchViewModeMini = FPK_SEARCH_VIEW_MODE_MINI;
+static const NSInteger FPKSearchViewModeFull = FPK_SEARCH_VIEW_MODE_FULL;
 
 @interface FileViewController : UIViewController <UIPageViewControllerDelegate,
 MyOutlineViewControllerDelegate,UIPopoverControllerDelegate,BookmarkViewControllerDelegate,UISearchBarDelegate>
 
-@property (strong, nonatomic) IBOutlet UIWebView *webView;
-
 @property (weak, nonatomic) IBOutlet UIView *pdfView;
-
-@property (nonatomic, strong) NSString *filePath; // 文件路径
-@property(nonatomic,strong) NSString *backFlage;
-@property(nonatomic,strong) NSString *receviveFileId;
-@property(nonatomic) NSInteger fileMakeType;  //1：自由传播 2：手动激活
-@property(nonatomic,assign) NSInteger bOpenInComing;  // 跳转类型
-@property(nonatomic,assign) NSInteger limitTime; // 阅读时长
-@property(nonatomic,assign)int openinfoid;
-@property(nonatomic,strong)NSString *waterMark;
-
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
 @property (nonatomic, retain) UIPopoverController * reusablePopover;

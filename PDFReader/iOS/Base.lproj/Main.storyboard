@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kkS-zX-If2">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kkS-zX-If2">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PDFReader" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--PDF播放-->
         <scene sceneID="TOD-kj-9xC">
             <objects>
@@ -35,14 +19,14 @@
                         <viewControllerLayoutGuide type="bottom" id="aw6-q0-5ta"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KdC-Tz-THB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Woe-Ws-dQ1" userLabel="timeView">
-                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="         " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ3-zg-tW7">
-                                        <rect key="frame" x="168" y="5" width="40" height="21"/>
+                                        <rect key="frame" x="140.5" y="5" width="40" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -67,7 +51,7 @@
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" style="plain" id="Mh4-22-zqb">
                             <view key="customView" contentMode="scaleToFill" id="u6u-Lb-o1F">
-                                <rect key="frame" x="16" y="5" width="170" height="33"/>
+                                <rect key="frame" x="16" y="5.5" width="144" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntq-Si-8hh">
@@ -88,11 +72,11 @@
                             </view>
                         </barButtonItem>
                         <view key="titleView" hidden="YES" contentMode="scaleToFill" id="42i-bk-PGw" userLabel="标题">
-                            <rect key="frame" x="183" y="0.0" width="9" height="44"/>
+                            <rect key="frame" x="160" y="0.0" width="0.0" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="654-RI-znI" userLabel="搜素">
-                                    <rect key="frame" x="87" y="14" width="22" height="35"/>
+                                    <rect key="frame" x="78" y="14" width="22" height="35"/>
                                     <state key="normal">
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
@@ -101,7 +85,7 @@
                                     </connections>
                                 </button>
                                 <searchBar hidden="YES" contentMode="redraw" placeholder="请输入关键词" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-Fn-x8F">
-                                    <rect key="frame" x="-183" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="-192" y="0.0" width="375" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="375" id="lFe-8l-dCj"/>
                                     </constraints>
@@ -125,11 +109,11 @@
                         </view>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="lNA-om-cfN">
                             <view key="customView" contentMode="scaleToFill" id="ejb-Cy-Me9">
-                                <rect key="frame" x="189" y="5" width="170" height="33"/>
+                                <rect key="frame" x="160" y="5.5" width="144" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRT-Dy-XG6" userLabel="目录">
-                                        <rect key="frame" x="145" y="-1" width="35" height="35"/>
+                                        <rect key="frame" x="119" y="-1" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="vVB-Rg-V9d"/>
                                         </constraints>
@@ -174,11 +158,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ucY-Pj-McV"/>
                     </layoutGuides>
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eVk-wG-wo1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfA-Wm-hQj" customClass="PDFScrollView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -224,7 +208,7 @@
                 </view>
                 <tapGestureRecognizer id="TIL-9O-KsM" userLabel="ibaBarBack"/>
             </objects>
-            <point key="canvasLocation" x="4487.1999999999998" y="3794.7526236881563"/>
+            <point key="canvasLocation" x="3948" y="3644"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R0O-kg-C40">

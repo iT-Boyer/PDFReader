@@ -74,12 +74,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		143AE0A01F00F664003C8B51 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		148C919B1DDEE772000EEABB /* PDFDocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFDocumentViewController.swift; path = osx/PDFDocumentViewController.swift; sourceTree = "<group>"; };
 		148C919E1DDEEFB4000EEABB /* PDFReader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PDFReader-Info.plist"; sourceTree = "<group>"; };
 		14B3D4FC1DDED4A600A63434 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = osx/Storyboard.storyboard; sourceTree = "<group>"; };
 		14C2DB411DD42AEE00113C2F /* PDFReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C2DB441DD42AEF00113C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14C2DB461DD42AEF00113C2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14C2DB491DD42AEF00113C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14C2DB4B1DD42AEF00113C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14C2DB4E1DD42AEF00113C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -208,10 +208,9 @@
 		143AE09F1F00F53E003C8B51 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				14C2DB461DD42AEF00113C2F /* ViewController.swift */,
+				14C2DB441DD42AEF00113C2F /* AppDelegate.swift */,
 				14C2DBEF1DD42B7200113C2F /* FileViewController.h */,
 				14C2DBF01DD42B7200113C2F /* FileViewController.m */,
-				14C2DB441DD42AEF00113C2F /* AppDelegate.swift */,
 				14C2DB481DD42AEF00113C2F /* Main.storyboard */,
 				14C2DB721DD42B4200113C2F /* lib */,
 			);
@@ -238,6 +237,7 @@
 		14C2DB381DD42AEE00113C2F = {
 			isa = PBXGroup;
 			children = (
+				143AE0A01F00F664003C8B51 /* README.md */,
 				14C2DB431DD42AEF00113C2F /* PDFReader */,
 				14C2DB581DD42AF000113C2F /* PDFReaderTests */,
 				14C2DB631DD42AF000113C2F /* PDFReaderUITests */,

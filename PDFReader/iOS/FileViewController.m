@@ -13,31 +13,6 @@
 #import "PDFParser.h"
 #import "BookmarkViewController.h"
 
-
-#define FPK_REUSABLE_VIEW_NONE 0
-#define FPK_REUSABLE_VIEW_SEARCH 1
-#define FPK_REUSABLE_VIEW_TEXT 2
-#define FPK_REUSABLE_VIEW_OUTLINE 3
-#define FPK_REUSABLE_VIEW_BOOKMARK 4
-
-
-
-static const NSInteger FPKReusableViewNone = FPK_REUSABLE_VIEW_NONE;
-static const NSInteger FPKReusableViewSearch = FPK_REUSABLE_VIEW_SEARCH;
-static const NSInteger FPKReusableViewText = FPK_REUSABLE_VIEW_TEXT;
-static const NSInteger FPKReusableViewOutline = FPK_REUSABLE_VIEW_OUTLINE;
-static const NSInteger FPKReusableViewBookmarks = FPK_REUSABLE_VIEW_BOOKMARK;
-
-
-
-
-#define FPK_SEARCH_VIEW_MODE_MINI 0
-#define FPK_SEARCH_VIEW_MODE_FULL 1
-
-static const NSInteger FPKSearchViewModeMini = FPK_SEARCH_VIEW_MODE_MINI;
-static const NSInteger FPKSearchViewModeFull = FPK_SEARCH_VIEW_MODE_FULL;
-
-
 @interface FileViewController ()
 
 @property (readonly, strong, nonatomic) ModelController *modelController;
@@ -74,35 +49,35 @@ static const NSInteger FPKSearchViewModeFull = FPK_SEARCH_VIEW_MODE_FULL;
     [super viewDidLoad];
     
     _pdfDocument = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"Manual1.pdf"];
-//    _pdfDocument = [[NSBundle mainBundle] pathForResource:@"input_pdf" ofType:@"pdf"];
     // Do any additional setup after loading the view, typically from a nib.
     // Configure the page view controller and add it as a child view controller.
-    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl
+                                                              navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
+                                                                            options:nil];
     self.pageViewController.delegate = self;
     
-    //    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
     //获取阅读的历史记录
-    NSInteger pageNum = [[NSUserDefaults standardUserDefaults] integerForKey:FPK_READHISTORY_PAGENUM(_receviveFileId)];
-    
-    DataViewController *startingViewController = [self.modelController viewControllerAtIndex:pageNum storyboard:self.storyboard];
+    NSInteger pageNum = 4;
+    DataViewController *startingViewController = [self.modelController viewControllerAtIndex:pageNum
+                                                                                  storyboard:self.storyboard];
+    //聚合pageView视图控制器
     NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:NULL];
+    [self.pageViewController setViewControllers:viewControllers
+                                      direction:UIPageViewControllerNavigationDirectionForward
+                                       animated:NO
+                                     completion:NULL];
     
     self.pageViewController.dataSource = self.modelController;
     
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
     
-    // Set the page view controller's bounds using an inset rect so that self's view is visible around the edges of the pages.
+    //设置pageview的bounds，使用嵌入矩形设置页面视图，让self.view页面的边缘可见。
     CGRect pageViewRect = self.view.bounds;
-//        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-//            pageViewRect = CGRectInset(pageViewRect, 40.0, 40.0);
-//        }
-    
     self.pageViewController.view.frame = pageViewRect;
     [self.pageViewController didMoveToParentViewController:self];
     
-    // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
+    //把pageView事件添加到PDFView上，手势保持一致
     self.pdfView.gestureRecognizers = self.pageViewController.gestureRecognizers;
 	// Do any additional setup after loading the view.
     
@@ -110,8 +85,8 @@ static const NSInteger FPKSearchViewModeFull = FPK_SEARCH_VIEW_MODE_FULL;
     [[[[ _ibSearchBar.subviews objectAtIndex :0] subviews] objectAtIndex:0] removeFromSuperview];
     [_ibSearchBar setBackgroundColor:[UIColor clearColor]];
     
+    //设置不支持侧滑转场
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    
 }
 
     
